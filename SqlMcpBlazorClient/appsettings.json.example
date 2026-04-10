@@ -1,0 +1,20 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "AzureOpenAI": {
+    "ModelId": "your-model-deployment-name",
+    "Endpoint": "https://your-resource-name.openai.azure.com/",
+    "ApiKey": "YOUR_AZURE_OPENAI_API_KEY_HERE"
+  },
+  "ConnectionStrings": {
+    "SqlServer": "Server=(localdb)\\MSSQLLocalDB;Database=YourDatabaseName;Integrated Security=true;TrustServerCertificate=true;"
+  },
+  "McpServer": {
+    "ProjectPath": "C:\\full\\path\\to\\SqlMcpServer\\SqlMcpServer.csproj"
+  }
+}

@@ -1,0 +1,247 @@
+﻿@page "/"
+
+<PageTitle>SQL Database Assistant - Home</PageTitle>
+
+<div class="home-container">
+    <div class="hero-section">
+        <h1 class="display-4"><i class="bi bi-robot"></i> SQL Database Assistant</h1>
+        <p class="lead">Your intelligent companion for SQL Server database management and analysis</p>
+        <hr class="my-4" />
+        <p>Powered by Azure OpenAI and the Model Context Protocol (MCP), this assistant helps you optimize and understand your databases.</p>
+        <a class="btn btn-primary btn-lg" href="/chat" role="button">Start Chatting <i class="bi bi-chat-dots-fill"></i></a>
+    </div>
+
+    <div class="features-section mt-5">
+        <h2 class="text-center mb-4"><i class="bi bi-stars"></i> Key Features</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-search"></i></div>
+                    <h3>Index Analysis</h3>
+                    <p>Automatically detect overlapping and redundant indexes that waste storage and slow down your database operations.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-bar-chart-fill"></i></div>
+                    <h3>Query Execution</h3>
+                    <p>Execute ad-hoc SQL queries with formatted results. Perfect for quick data exploration and analysis.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="bi bi-lightbulb-fill"></i></div>
+                    <h3>Smart Insights</h3>
+                    <p>Get AI-powered recommendations for database optimization, performance improvements, and best practices.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="how-it-works-section mt-5">
+        <h2 class="text-center mb-4"><i class="bi bi-gear-fill"></i> How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h4>Connect</h4>
+                    <p>The assistant connects to your SQL Server database using the configured connection string.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h4>Ask</h4>
+                    <p>Type your question or request in natural language - no complex queries needed!</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h4>Analyze</h4>
+                    <p>The AI assistant understands your intent and uses the appropriate tools to gather information.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h4>Get Results</h4>
+                    <p>Receive clear, formatted results with actionable insights and recommendations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-section mt-5">
+        <div class="cta-card">
+            <h3>Ready to optimize your database?</h3>
+            <p>Start a conversation with your SQL Assistant now!</p>
+            <a class="btn btn-success btn-lg" href="/chat" role="button">Launch Chat Assistant <i class="bi bi-rocket-takeoff-fill"></i></a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .home-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+
+    .hero-section {
+        text-align: center;
+        padding: 60px 20px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero-section .btn-primary {
+        margin-top: 20px;
+        padding: 15px 40px;
+        font-size: 1.2rem;
+        border-radius: 50px;
+        background: white;
+        color: #667eea;
+        border: none;
+        font-weight: 600;
+        transition: transform 0.3s ease;
+    }
+
+    .hero-section .btn-primary:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .features-section {
+        padding: 40px 0;
+    }
+
+    .feature-card {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        height: 100%;
+        transition: transform 0.3s ease;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .feature-icon {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        color: #667eea;
+    }
+
+    .feature-icon i {
+        font-size: 3rem;
+    }
+
+    .feature-card h3 {
+        color: #667eea;
+        margin-bottom: 15px;
+    }
+
+    .how-it-works-section {
+        padding: 40px 0;
+        background: #f8f9fa;
+        border-radius: 15px;
+        padding: 40px;
+    }
+
+    .steps {
+        display: grid;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .step {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-number {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        flex-shrink: 0;
+    }
+
+    .step-content h4 {
+        margin: 0 0 10px 0;
+        color: #667eea;
+    }
+
+    .step-content p {
+        margin: 0;
+        color: #6c757d;
+    }
+
+    .cta-section {
+        padding: 40px 0;
+    }
+
+    .cta-card {
+        background: linear-gradient(135deg, #56ab2f 0%, #a8e063 100%);
+        padding: 60px;
+        border-radius: 15px;
+        text-align: center;
+        color: white;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .cta-card h3 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .cta-card .btn-success {
+        margin-top: 20px;
+        padding: 15px 40px;
+        font-size: 1.2rem;
+        border-radius: 50px;
+        background: white;
+        color: #56ab2f;
+        border: none;
+        font-weight: 600;
+        transition: transform 0.3s ease;
+    }
+
+    .cta-card .btn-success:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    @@media (max-width: 768px) {
+        .hero-section {
+            padding: 40px 20px;
+        }
+
+        .step {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .cta-card {
+            padding: 40px 20px;
+        }
+    }
+</style>
